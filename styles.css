@@ -1,0 +1,45 @@
+/* Estilo dos cards de tarefas */
+.task {
+    background-color: rgba(238, 238, 238, 0.6);
+    width: 40vw;
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+/* Título da tarefa */
+.task-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Texto menor para data e prioridade */
+.task-date,
+.task-priority {
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Aumenta tamanho do checkbox */
+.task input {
+    transform: scale(1.2);
+}
+
+/* Estilo para tarefa concluída */
+.task.concluida .task-title {
+    text-decoration: line-through;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .task {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 679px) {
+    .task {
+        width: 80vw;
+    }
+}
